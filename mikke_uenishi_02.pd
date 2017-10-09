@@ -1,0 +1,87 @@
+#N canvas 204 170 1108 480 10;
+#X obj 481 56 adc~;
+#X floatatom 484 197 5 0 0 0 - - -, f 5;
+#X text 759 316 c6;
+#X text 711 313 b5;
+#X text 613 316 a5;
+#X text 657 315 as5;
+#X text 562 313 gs5;
+#X text 515 312 g5;
+#X text 463 312 fs5;
+#X text 417 313 f5;
+#X text 372 312 e5;
+#X text 328 315 ds5;
+#X text 288 315 d5;
+#X text 243 314 cs5;
+#X text 199 313 c5;
+#X obj 486 149 int;
+#X obj 183 295 == 72;
+#X obj 228 294 == 73;
+#X obj 273 295 == 74;
+#X obj 313 295 == 75;
+#X obj 358 292 == 76;
+#X obj 402 293 == 77;
+#X obj 448 292 == 78;
+#X obj 500 292 == 79;
+#X obj 547 293 == 80;
+#X obj 598 296 == 81;
+#X obj 649 295 == 82;
+#X obj 706 294 == 83;
+#X obj 750 295 == 84;
+#X obj 486 95 sigmund~ pitch env;
+#X obj 181 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 601 343 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 226 337 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 456 352 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 274 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 328 348 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 372 353 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 419 350 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 755 346 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 713 347 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 659 345 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 553 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 512 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 29 0;
+#X connect 0 1 29 0;
+#X connect 1 0 16 0;
+#X connect 1 0 17 0;
+#X connect 1 0 18 0;
+#X connect 1 0 19 0;
+#X connect 1 0 20 0;
+#X connect 1 0 21 0;
+#X connect 1 0 22 0;
+#X connect 1 0 23 0;
+#X connect 1 0 24 0;
+#X connect 1 0 25 0;
+#X connect 1 0 26 0;
+#X connect 1 0 27 0;
+#X connect 1 0 28 0;
+#X connect 15 0 1 0;
+#X connect 16 0 30 0;
+#X connect 17 0 32 0;
+#X connect 18 0 34 0;
+#X connect 19 0 35 0;
+#X connect 20 0 36 0;
+#X connect 21 0 37 0;
+#X connect 22 0 33 0;
+#X connect 23 0 42 0;
+#X connect 24 0 41 0;
+#X connect 25 0 31 0;
+#X connect 26 0 40 0;
+#X connect 27 0 39 0;
+#X connect 28 0 38 0;
+#X connect 29 0 15 0;

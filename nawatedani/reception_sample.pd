@@ -1,0 +1,22 @@
+#N canvas 1348 167 887 306 12;
+#X obj 435 45 OSC;
+#X msg 435 21 version;
+#X obj 47 65 dumpOSC 8000;
+#X text 150 64 <---ポート8000番のOSCデータを受信する;
+#X floatatom 610 77 5 0 0 0 - - -;
+#X obj 455 91 unpack f f f;
+#X floatatom 437 135 5 0 0 0 - - -;
+#X floatatom 485 135 5 0 0 0 - - -;
+#X floatatom 533 135 5 0 0 0 - - -;
+#X obj 431 170 print unmatch;
+#X obj 432 204 print venus;
+#X obj 6 236 print;
+#X obj 115 115 OSCroute /poppy;
+#X text 49 236 <---ここでシェルスクリプトをキックして、その中で受け取った値が０以上ならば処理をおこなう
+;
+#X connect 1 0 0 0;
+#X connect 2 0 12 0;
+#X connect 5 0 6 0;
+#X connect 5 1 7 0;
+#X connect 5 2 8 0;
+#X connect 12 0 11 0;

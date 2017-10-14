@@ -1,0 +1,51 @@
+#N canvas 2064 41 1001 801 10;
+#X floatatom 401 187 5 0 0 0 - - -;
+#X floatatom 494 160 5 0 0 0 - - -;
+#X obj 148 115 r~ sound;
+#X obj 53 134 s~ sound;
+#X obj 173 588 sendOSC;
+#X msg -171 472 connect localhost 8000;
+#X obj 386 122 sigmund~ pitch env;
+#X msg 261 546 send /pitch \$1;
+#X msg 298 470 send /vol \$1;
+#X obj 500 211 s vol;
+#X obj 300 439 r vol;
+#X floatatom 172 631 5 0 0 0 - - -;
+#X obj 427 230 s pitch;
+#X obj 260 516 r pitch;
+#X obj 134 77 adc~;
+#X floatatom 237 632 5 0 0 0 - - -;
+#X msg 184 543 disconnect;
+#X obj 227 391 delay 60;
+#X obj 210 429 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 350 693 textfile;
+#X msg 356 606 add \$1;
+#X msg 347 646 write C:/Users/kousuke/program/pd/tmp/log.txt cr;
+#X obj 65 76 osc~ 440;
+#X msg 54 481 send /poppy \$1;
+#X obj -42 362 expr if($f1 != 0 \, $f1 \, 0);
+#X obj -185 276 expr if($f1 == 68 || $f1 == 69 || $f1 == 70 || $f1
+== 71 || $f1 == 72 || $f1 == 73 || $f1 == 74 || $f1 == 75 || $f1 ==
+76 || $f1 == 77 || $f1 == 78 || $f1 == 79 || $f1 == 80 || $f1 == 81
+|| $f1 == 82 || $f1 == 83 || $f1 == 84 || $f1 == 85 \, $f1 \, 0);
+#X connect 0 0 12 0;
+#X connect 0 0 25 0;
+#X connect 1 0 9 0;
+#X connect 2 0 6 0;
+#X connect 4 0 11 0;
+#X connect 4 1 15 0;
+#X connect 5 0 4 0;
+#X connect 6 0 0 0;
+#X connect 6 1 1 0;
+#X connect 10 0 8 0;
+#X connect 13 0 7 0;
+#X connect 16 0 4 0;
+#X connect 17 0 18 0;
+#X connect 18 0 16 0;
+#X connect 20 0 21 0;
+#X connect 21 0 19 0;
+#X connect 22 0 3 0;
+#X connect 23 0 4 0;
+#X connect 24 0 23 0;
+#X connect 25 0 24 0;

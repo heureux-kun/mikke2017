@@ -1,0 +1,121 @@
+#N canvas 34 123 1131 665 10;
+#X obj 371 20 adc~;
+#X floatatom 376 120 5 0 0 0 - - -, f 5;
+#X floatatom 708 85 5 0 0 0 - - -, f 5;
+#X obj 370 56 sigmund~ -hop 4096 pitch env;
+#X text 731 377 b5;
+#X text 588 371 a5;
+#X text 651 372 as5;
+#X text 520 368 gs5;
+#X text 460 369 g5;
+#X text 402 372 fs5;
+#X text 336 375 f5;
+#X text 281 368 e5;
+#X text 216 377 ds5;
+#X text 160 374 d5;
+#X text 88 370 cs5;
+#X text 33 370 c5;
+#X text 425 32 feaquency -> pitch;
+#X obj 371 92 int;
+#X obj 593 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 629 621 shell;
+#X obj 708 113 > 50;
+#X floatatom 708 176 5 0 0 0 - - -, f 5;
+#X obj 708 144 change;
+#X obj 723 401 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 529 393 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 662 399 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 206 328 spigot;
+#X obj 719 327 spigot;
+#X obj 270 324 spigot;
+#X obj 145 329 spigot;
+#X obj 328 325 spigot;
+#X obj 391 325 spigot;
+#X obj 455 326 spigot;
+#X obj 520 326 spigot;
+#X obj 594 328 spigot;
+#X obj 653 326 spigot;
+#X obj 24 328 spigot;
+#X obj 81 329 spigot;
+#X text 769 146 ELIMINATE REDUNDANCY IN A NUMBER STREAM;
+#X obj 789 399 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 785 329 spigot;
+#X text 797 375 c6;
+#X floatatom 543 182 5 0 0 0 - - -, f 5;
+#X obj 209 180 sel 71 72 73 74 75 76 77 78 79 80 81 82 83;
+#X obj 396 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 26 396 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 459 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 335 394 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 279 392 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 210 396 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 159 396 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 87 394 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 452 451 /usr/bin/python /home/pi/Documents/gitHub/mikke2017/pd/program/led-high.py
+;
+#X msg 557 505 /usr/bin/python /home/pi/Documents/gitHub/mikke2017/pd/program/led-gpio.py
+;
+#X connect 0 0 3 0;
+#X connect 0 1 3 0;
+#X connect 1 0 43 0;
+#X connect 2 0 20 0;
+#X connect 3 0 17 0;
+#X connect 3 1 2 0;
+#X connect 17 0 1 0;
+#X connect 20 0 22 0;
+#X connect 21 0 27 1;
+#X connect 21 0 35 1;
+#X connect 21 0 33 1;
+#X connect 21 0 32 1;
+#X connect 21 0 31 1;
+#X connect 21 0 30 1;
+#X connect 21 0 28 1;
+#X connect 21 0 26 1;
+#X connect 21 0 29 1;
+#X connect 21 0 37 1;
+#X connect 21 0 36 1;
+#X connect 21 0 40 1;
+#X connect 21 0 34 1;
+#X connect 22 0 21 0;
+#X connect 26 0 49 0;
+#X connect 27 0 23 0;
+#X connect 28 0 48 0;
+#X connect 29 0 50 0;
+#X connect 30 0 47 0;
+#X connect 31 0 44 0;
+#X connect 32 0 46 0;
+#X connect 33 0 24 0;
+#X connect 34 0 18 0;
+#X connect 35 0 25 0;
+#X connect 36 0 45 0;
+#X connect 37 0 51 0;
+#X connect 40 0 39 0;
+#X connect 43 0 36 0;
+#X connect 43 1 37 0;
+#X connect 43 2 29 0;
+#X connect 43 3 26 0;
+#X connect 43 4 28 0;
+#X connect 43 5 30 0;
+#X connect 43 6 31 0;
+#X connect 43 7 32 0;
+#X connect 43 8 33 0;
+#X connect 43 9 34 0;
+#X connect 43 10 35 0;
+#X connect 43 11 27 0;
+#X connect 43 12 40 0;
+#X connect 43 13 42 0;
+#X connect 52 0 19 0;
+#X connect 53 0 19 0;

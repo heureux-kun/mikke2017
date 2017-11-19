@@ -1,18 +1,17 @@
 import wiringpi as pi
 import time
 
-SOLENOID_PIN =  16
+pin_num =  26
 
 pi.wiringPiSetupGpio()
-pi.pinMode(SOLENOID_PIN, pi.OUTPUT)
-pi.digitalWrite(SOLENOID_PIN, pi.LOW)
+pi.pinMode(pin_num, pi.OUTPUT)
+pi.digitalWrite(pin_num, pi.LOW)
 
 try:
-    pi.digitalWrite(SOLENOID_PIN,pi.HIGH)
+    pi.digitalWrite(pin_num,pi.HIGH)
     time.sleep(0.1)
-    pi.digitalWrite(SOLENOID_PIN,pi.LOW)
+    pi.digitalWrite(pin_num,pi.LOW)
     time.sleep(0.1)
 except KeyboardInterrupt:
     pass
 
-GPIO.cleanup()

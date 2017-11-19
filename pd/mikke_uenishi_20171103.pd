@@ -1,0 +1,226 @@
+#N canvas 93 202 1723 924 10;
+#X obj 906 57 adc~;
+#X floatatom 911 157 5 0 0 0 - - -, f 5;
+#X floatatom 1243 122 5 0 0 0 - - -, f 5;
+#X obj 905 93 sigmund~ -hop 4096 pitch env;
+#X text 960 69 feaquency -> pitch;
+#X obj 906 129 int;
+#X obj 1243 150 > 50;
+#X floatatom 1243 213 5 0 0 0 - - -, f 5;
+#X obj 1243 181 change;
+#X obj 874 301 spigot;
+#X obj 938 297 spigot;
+#X obj 813 302 spigot;
+#X obj 996 298 spigot;
+#X obj 1059 298 spigot;
+#X obj 1123 299 spigot;
+#X obj 692 301 spigot;
+#X obj 749 302 spigot;
+#X text 1304 183 ELIMINATE REDUNDANCY IN A NUMBER STREAM;
+#X floatatom 1016 230 5 0 0 0 - - -, f 5;
+#X obj 1064 371 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 694 369 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1127 371 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1003 367 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 947 365 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 878 369 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 827 369 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 755 367 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 125 494 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 300 515 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 933 481 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1314 466 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1188 475 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1380 653 delay 3000;
+#X floatatom 1385 681 5 0 0 0 - - -, f 5;
+#X obj 1341 713 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 1341 746 5 0 0 0 - - -, f 5;
+#X obj 94 677 delay 3000;
+#X floatatom 99 713 5 0 0 0 - - -, f 5;
+#X obj 55 745 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 55 778 5 0 0 0 - - -, f 5;
+#X obj 304 674 delay 3000;
+#X floatatom 311 712 5 0 0 0 - - -, f 5;
+#X obj 267 744 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 267 777 5 0 0 0 - - -, f 5;
+#X obj 1002 649 delay 3000;
+#X floatatom 1009 687 5 0 0 0 - - -, f 5;
+#X obj 965 719 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 965 752 5 0 0 0 - - -, f 5;
+#X obj 1553 631 delay 3000;
+#X floatatom 1560 669 5 0 0 0 - - -, f 5;
+#X obj 1516 701 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 1516 734 5 0 0 0 - - -, f 5;
+#X obj 1202 652 delay 3000;
+#X floatatom 1209 690 5 0 0 0 - - -, f 5;
+#X obj 1165 722 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1
+0 1;
+#X floatatom 1165 755 5 0 0 0 - - -, f 5;
+#X text 1012 621 GPIO 23 LED;
+#X text 1212 624 GPIO 23 LED;
+#X obj 967 781 wiringPi_gpio 4 0 0;
+#X obj 1167 784 wiringPi_gpio 4 0 0;
+#X text 1563 603 GPIO 4 LED;
+#X text 102 647 GPIO 24 LED;
+#X obj 57 807 wiringPi_gpio 5 0 0;
+#X text 314 646 GPIO 24 LED;
+#X obj 269 806 wiringPi_gpio 5 0 0;
+#X text 1383 620 GPIO 4 LED;
+#X obj 1343 775 wiringPi_gpio 2 0 0;
+#X obj 1518 763 wiringPi_gpio 2 0 0;
+#X text 701 343 A4;
+#X text 756 343 E5;
+#X text 884 350 G5;
+#X text 828 347 D5;
+#X text 949 341 A5;
+#X text 1004 348 C6;
+#X text 1070 345 D6;
+#X text 1128 342 E6;
+#X obj 1024 479 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 595 547 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 641 660 delay 3000;
+#X floatatom 648 698 5 0 0 0 - - -, f 5;
+#X obj 604 730 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 604 763 5 0 0 0 - - -, f 5;
+#X text 651 632 GPIO 24 LED;
+#X obj 606 792 wiringPi_gpio 5 0 0;
+#X obj 781 485 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 825 574 rythum1;
+#X obj 823 646 delay 3000;
+#X floatatom 830 684 5 0 0 0 - - -, f 5;
+#X obj 786 716 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 786 749 5 0 0 0 - - -, f 5;
+#X text 833 618 GPIO 23 LED;
+#X obj 788 778 wiringPi_gpio 4 0 0;
+#X floatatom 468 568 5 0 0 0 - - -, f 5;
+#X obj 424 600 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 424 633 5 0 0 0 - - -, f 5;
+#X obj 426 662 wiringPi_gpio 21 0 0;
+#X obj 454 537 delay 1000;
+#X obj 1433 534 rythum2;
+#X text 446 507 GPIO 5 MOTOR;
+#X obj 744 217 sel 69 74 76 79 81 84 86 88;
+#X obj 1125 535 rythum1;
+#X connect 0 0 3 0;
+#X connect 0 1 3 0;
+#X connect 1 0 99 0;
+#X connect 2 0 6 0;
+#X connect 3 0 5 0;
+#X connect 3 1 2 0;
+#X connect 5 0 1 0;
+#X connect 6 0 8 0;
+#X connect 7 0 14 1;
+#X connect 7 0 13 1;
+#X connect 7 0 12 1;
+#X connect 7 0 10 1;
+#X connect 7 0 9 1;
+#X connect 7 0 11 1;
+#X connect 7 0 16 1;
+#X connect 7 0 15 1;
+#X connect 8 0 7 0;
+#X connect 9 0 24 0;
+#X connect 10 0 23 0;
+#X connect 11 0 25 0;
+#X connect 12 0 22 0;
+#X connect 13 0 19 0;
+#X connect 14 0 21 0;
+#X connect 15 0 20 0;
+#X connect 16 0 26 0;
+#X connect 19 0 31 0;
+#X connect 20 0 27 0;
+#X connect 21 0 30 0;
+#X connect 22 0 76 0;
+#X connect 23 0 29 0;
+#X connect 24 0 84 0;
+#X connect 25 0 77 0;
+#X connect 26 0 28 0;
+#X connect 27 0 38 0;
+#X connect 27 0 36 0;
+#X connect 28 0 40 0;
+#X connect 28 0 42 0;
+#X connect 28 0 96 0;
+#X connect 28 0 93 0;
+#X connect 29 0 44 0;
+#X connect 29 0 46 0;
+#X connect 30 0 48 0;
+#X connect 30 0 50 0;
+#X connect 30 0 97 0;
+#X connect 31 0 34 0;
+#X connect 31 0 32 0;
+#X connect 32 0 33 0;
+#X connect 33 0 34 0;
+#X connect 34 0 35 0;
+#X connect 35 0 66 0;
+#X connect 36 0 37 0;
+#X connect 37 0 38 0;
+#X connect 38 0 39 0;
+#X connect 39 0 62 0;
+#X connect 40 0 41 0;
+#X connect 41 0 42 0;
+#X connect 42 0 43 0;
+#X connect 43 0 64 0;
+#X connect 44 0 45 0;
+#X connect 45 0 46 0;
+#X connect 46 0 47 0;
+#X connect 47 0 58 0;
+#X connect 48 0 49 0;
+#X connect 49 0 50 0;
+#X connect 50 0 51 0;
+#X connect 51 0 67 0;
+#X connect 52 0 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 55 0;
+#X connect 55 0 59 0;
+#X connect 76 0 52 0;
+#X connect 76 0 54 0;
+#X connect 76 0 100 0;
+#X connect 77 0 78 0;
+#X connect 77 0 80 0;
+#X connect 78 0 79 0;
+#X connect 79 0 80 0;
+#X connect 80 0 81 0;
+#X connect 81 0 83 0;
+#X connect 84 0 85 0;
+#X connect 84 0 86 0;
+#X connect 84 0 88 0;
+#X connect 86 0 87 0;
+#X connect 87 0 88 0;
+#X connect 88 0 89 0;
+#X connect 89 0 91 0;
+#X connect 92 0 93 0;
+#X connect 93 0 94 0;
+#X connect 94 0 95 0;
+#X connect 96 0 92 0;
+#X connect 99 0 15 0;
+#X connect 99 1 16 0;
+#X connect 99 2 11 0;
+#X connect 99 3 9 0;
+#X connect 99 4 10 0;
+#X connect 99 5 12 0;
+#X connect 99 6 13 0;
+#X connect 99 7 14 0;
+#X connect 99 8 18 0;

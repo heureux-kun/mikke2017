@@ -1,0 +1,19 @@
+#N canvas 304 413 483 393 10;
+#X obj 157 202 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X floatatom 157 224 5 0 0 0 - - -, f 5;
+#X obj 160 34 inlet;
+#X obj 165 123 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 155 82 sel 0 1;
+#X obj 203 153 delay 20;
+#X obj 157 245 wiringPi_gpio 27 0 1;
+#X floatatom 284 77 5 0 0 0 - - -, f 5;
+#X connect 0 0 1 0;
+#X connect 1 0 6 0;
+#X connect 2 0 4 0;
+#X connect 2 0 7 0;
+#X connect 3 0 0 0;
+#X connect 3 0 5 0;
+#X connect 4 1 3 0;
+#X connect 5 0 0 0;

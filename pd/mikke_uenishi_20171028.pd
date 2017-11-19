@@ -1,4 +1,4 @@
-#N canvas 92 142 1150 965 10;
+#N canvas 148 105 1150 965 10;
 #X obj 371 20 adc~;
 #X floatatom 376 120 5 0 0 0 - - -, f 5;
 #X floatatom 708 85 5 0 0 0 - - -, f 5;
@@ -74,18 +74,17 @@
 -1 -1;
 #X obj 737 410 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 466 563 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 505 542 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 466 585 5 0 0 0 - - -, f 5;
-#X obj 642 601 wiringPi_gpio 6 0 0;
-#X obj 679 471 delay 3000;
-#X text 683 559 GPIO25(PIN22) LED;
-#X obj 466 606 wiringPi_gpio 27 0 1;
-#X obj 512 514 delay 150;
-#X floatatom 684 507 5 0 0 0 - - -, f 5;
-#X obj 640 539 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X floatatom 505 564 5 0 0 0 - - -, f 5;
+#X obj 846 591 wiringPi_gpio 6 0 0;
+#X obj 883 461 delay 3000;
+#X obj 505 585 wiringPi_gpio 27 0 1;
+#X obj 551 493 delay 150;
+#X floatatom 888 497 5 0 0 0 - - -, f 5;
+#X obj 844 529 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X floatatom 640 572 5 0 0 0 - - -, f 5;
+#X floatatom 844 562 5 0 0 0 - - -, f 5;
 #X obj 63 790 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 62 830 5 0 0 0 - - -, f 5;
@@ -97,7 +96,7 @@
 #X obj 128 591 delay 3000;
 #X obj 77 558 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 242 261 450 398 ptn_1 1;
+#N canvas 241 271 450 398 ptn_1 0;
 #X obj 140 264 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X floatatom 139 304 5 0 0 0 - - -, f 5;
@@ -118,7 +117,24 @@
 #X connect 6 0 5 0;
 #X connect 7 0 6 0;
 #X connect 7 0 5 0;
-#X restore 334 683 pd ptn_1;
+#X restore 105 86 pd ptn_1;
+#X floatatom 263 839 5 0 0 0 - - -, f 5;
+#X obj 263 860 wiringPi_gpio 27 0 1;
+#X obj 288 764 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 245 526 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 299 795 delay 150;
+#X obj 73 384 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 85 501 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 67 433 delay 1000;
+#X obj 301 639 delay 1000;
+#X obj 393 649 delay 2500;
+#X obj 477 672 delay 3000;
+#X obj 559 689 delay 4000;
+#X text 878 436 GPIO25 LED;
 #X connect 0 0 3 0;
 #X connect 0 1 3 0;
 #X connect 1 0 43 0;
@@ -183,21 +199,36 @@
 #X connect 51 0 53 0;
 #X connect 54 0 60 0;
 #X connect 54 0 57 0;
-#X connect 54 0 63 0;
-#X connect 54 0 65 0;
+#X connect 54 0 62 0;
+#X connect 54 0 64 0;
 #X connect 57 0 58 0;
-#X connect 58 0 62 0;
-#X connect 60 0 64 0;
-#X connect 63 0 57 0;
+#X connect 58 0 61 0;
+#X connect 60 0 63 0;
+#X connect 62 0 57 0;
+#X connect 63 0 64 0;
 #X connect 64 0 65 0;
-#X connect 65 0 66 0;
-#X connect 66 0 59 0;
+#X connect 65 0 59 0;
+#X connect 66 0 67 0;
 #X connect 67 0 68 0;
-#X connect 68 0 69 0;
-#X connect 70 0 67 0;
+#X connect 69 0 66 0;
+#X connect 70 0 69 0;
+#X connect 70 0 66 0;
 #X connect 71 0 70 0;
-#X connect 71 0 67 0;
 #X connect 72 0 71 0;
 #X connect 73 0 72 0;
-#X connect 74 0 73 0;
-#X connect 74 0 72 0;
+#X connect 73 0 71 0;
+#X connect 75 0 76 0;
+#X connect 77 0 79 0;
+#X connect 77 0 75 0;
+#X connect 78 0 83 0;
+#X connect 78 0 77 0;
+#X connect 78 0 84 0;
+#X connect 78 0 85 0;
+#X connect 78 0 86 0;
+#X connect 79 0 75 0;
+#X connect 80 0 82 0;
+#X connect 82 0 81 0;
+#X connect 83 0 77 0;
+#X connect 84 0 77 0;
+#X connect 85 0 77 0;
+#X connect 86 0 77 0;
